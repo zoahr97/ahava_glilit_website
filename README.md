@@ -1,1 +1,1 @@
-Front-End website for “Ahava Glilit” vacation cabins in the Galilee, built with HTML and CSS. Features accommodation pages, image galleries, pricing, contact details, social media links, and a promotional video.**
+Front-End website for “Ahava Glilit” vacation cabins in the Galilee, built with HTML and CSS. Features accommodation pages, image galleries, pricing, contact details, social media links, and a promotional video.
