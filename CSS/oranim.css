@@ -1,0 +1,32 @@
+#bikta{
+    text-align: center;
+    font-size: 70px;
+
+    margin-top: 140px; 
+}
+#price{
+    margin-top: 80px;
+    text-align: center;
+}
+h2 a:hover {
+color: #1893c8;
+}
+h2 a:active {
+color: #1893c8;
+}
+#des{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 70px;
+    font-weight: bold;
+}
+
+/* ======================================= */
+/* ====== רספונסיביות - מובייל (עד 768px) ====== */
+/* ======================================= */
+@media screen and (max-width: 768px) {
+    #bikta {
+       
+        margin-top: 280px; 
+    }
+}

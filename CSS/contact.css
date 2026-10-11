@@ -1,0 +1,156 @@
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size:50px;
+    margin-top: 180px;
+}
+
+#contact_us{
+    
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.contact_link{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+#form_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form {
+    background-color:rgb(184, 156, 65);;
+    width: 800px;
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* שדות הקלט */
+form input {
+    width: 80%;
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: right;
+    font-size: 1em;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+form input:focus {
+    outline: none;
+    border-color: #a1873b;
+    box-shadow: 0 0 10px rgba(161, 135, 59, 0.4);
+}
+
+/* כפתור שליחה */
+input[type="submit"] {
+    margin-top: 30px;
+    width: 50%;
+    background-color: #a1873b;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-align: center;
+}
+input[type="submit"]:hover {
+    background-color: #968856;
+    transform: scale(1.05);
+}
+::placeholder{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#message{
+    margin-top: 20px;
+    width:80% ;
+    height: 80px;
+    border-radius: 10px;
+    text-align:right;
+    border: 1px solid #ccc;
+} 
+
+#map_container{
+    text-align: center;
+}
+#map_container iframe {
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* צל יפה */
+    width: 800px;
+    height: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* ======================================= */
+/* ====== רספונסיביות - טאבלט ומובייל ====== */
+/* ======================================= */
+@media screen and (max-width: 900px) { 
+    
+   
+    #contact_us {
+        margin-top: 280px; 
+    }
+    
+    h1 {
+        font-size: 40px; /* הקטנת הכותרת */
+    }
+
+    /* הפורם עצמו - הופך מרוחב קבוע לרוחב יחסי */
+    form {
+        width: 90%; 
+        height: auto; 
+        padding: 30px 10px; 
+    }
+
+    /* שדות הקלט */
+    form input, #message {
+        width: 90% !important; /* רוחב יחסי לשדות */
+    }
+    
+    /* כפתור שליחה */
+    input[type="submit"] {
+        width: 70%; 
+    }
+    
+    .contact_link, #contact_us {
+        font-size: 20px;
+    }
+
+
+    /* מיכל המפה - הופך את המפה לרספונסיבית */
+    #map_container {
+        width: 95%; 
+        margin: 0 auto 50px auto;
+    }
+    
+    #map_container iframe {
+        width: 100% !important; /* רוחב מלא של המיכל */
+        height: 400px; /* גובה קבוע סביר במקום 600px */
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

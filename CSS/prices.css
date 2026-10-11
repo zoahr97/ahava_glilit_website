@@ -1,0 +1,72 @@
+table {
+ margin-top: 100px;
+margin-right: 130px;
+ width:80%;
+ height: 500px;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  table-layout: fixed; 
+  direction: rtl;
+  margin-bottom: 160px;
+  
+
+
+}
+
+th {
+  background-color: #ac9433;
+  color: white;
+  padding: 12px;
+  height: 50px;
+  
+ text-align: center;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: #f3e5f5;
+}
+#title{
+  margin-top: 130px;
+  text-align: center;
+  font-size: 100px;
+  color:#ac9433;
+  font-family:cursive
+}
+#order-btn{
+ text-align: center;
+ font-size: 30px;
+}
+#link_here:active{
+color: deepskyblue;
+}
+
+/* ======================================= */
+/* ====== רספונסיביות - טאבלט ומובייל ====== */
+/* ======================================= */
+@media screen and (max-width: 768px) {
+    #title {
+    font-size: 60px;
+    margin-top: 200px; /* תשני לפי כמה רווח את רוצה */
+}
+
+
+    /* התאמות לטבלה */
+  
+    table {
+        width: 95%;
+        margin: 0 auto;
+        table-layout: fixed;
+    }
+
+    th, td {
+        min-width: 120px; /* רוחב מינימלי לקריאות טובה */
+        padding: 8px;
+    }
+}

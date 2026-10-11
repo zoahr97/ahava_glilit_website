@@ -1,0 +1,56 @@
+.images {
+  display: flex;                 /* מציב את התמונות בשורה */
+  justify-content: center;       /* ממקם במרכז */
+  align-items: center;           /* מיישר אנכית */
+  flex-wrap: wrap;               /* שובר שורה במסכים קטנים */
+  gap: 30px;                     /* רווח בין התמונות */
+  margin: 40px auto;
+  margin-bottom: 166px;
+  margin-top: 160px;
+}
+
+.image img {
+  width: 400px;                  /* גודל אחיד לתמונות */
+  height: 300px;                 /* גובה אחיד */
+  object-fit: cover;             /* חותך יפה את התמונה */
+  border-radius: 15px;           /* פינות מעוגלות */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* הצללה */
+  transition: transform 0.6s ease, filter 0.6s ease;/*יצירת אנימציה*/
+}
+
+.image img:hover {
+  transform: scale(1.05);        /* אפקט עדין של התקרבות */
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+/* ======================================= */
+/* ====== רספונסיביות - טאבלט (עד 768px) ====== */
+/* ======================================= */
+@media screen and (max-width: 768px) {
+    .images {
+        gap: 20px; /* הקטנת המרווחים */
+    }
+    
+    .image img {
+        /* תופס קצת פחות מחצי רוחב המסך (45vw) כדי ששתי תמונות יוכלו להיות זו ליד זו */
+        width: 45vw;                  
+        height: auto; 
+    }
+}
+
+/* ======================================= */
+/* ======= רספונסיביות - מובייל (עד 600px) ======= */
+/* ======================================= */
+@media screen and (max-width: 600px) {
+    .images {
+        gap: 15px; 
+        margin-top: 50px;
+    }
+    
+    .image img {
+        /* תמונה אחת ברוחב מלא (90% מהמסך) */
+        width: 90vw;                  
+        height: auto; 
+    }
+}
